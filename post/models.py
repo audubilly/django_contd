@@ -7,7 +7,7 @@ from account.models import Owner
 class Post(models.Model):
     owner = models.ForeignKey(Owner, on_delete=models.CASCADE, related_name='post_owner')
     description = models.TextField()
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='post_images/')
     date_created = models.DateTimeField(auto_now_add=True)
     number_of_likes = models.IntegerField(default=0)
     number_of_comments = models.IntegerField(default=0)
