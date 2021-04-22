@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Detail</title>
+</head>
+<body>
+    <h1>Detail of Post</h1>
+    <hr>
+    <div>
+        <h6>@{{ post.owner.username }}</h6>
+        <img src="{{ post }}" />
+    </div>
+</body>
+</html>

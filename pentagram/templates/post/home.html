@@ -12,8 +12,8 @@
     {% for post in posts %}
         <div class="post">
             <div class="first_div">
-                < bmd`img src="{{ post.owner.profile_picture.url }}">
-                <p>{{ post.owner.username}} </p>
+                <img src="{{ post.owner.profile_picture.url }}">
+                <p>@{{ post.owner.username}} </p>
             </div>
             <div class="second_div"> <img src="{{ post.image.url }}"></div>
             <div class="third_div"> <p>{{ post.description }}</p></div>
