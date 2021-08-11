@@ -32,4 +32,4 @@ def post_detail(request, pk):
     context = {
         "post": post
     }
-    return render(request, "post/post_detail.html")
+    return render(request, "post/post_detail.html", context)
