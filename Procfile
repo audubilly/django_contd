@@ -1,0 +1,1 @@
+web: gunicorn pentagram.wsgi --log-file -
